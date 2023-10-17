@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "outDir": "dist",
+    "lib": ["DOM", "DOM.Iterable", "ES2021"],
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "strict": true,
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "resolveJsonModule": false,
+    "isolatedModules": true
+  },
+  "include": ["src"]
+}
