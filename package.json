@@ -1,6 +1,6 @@
 {
   "name": "@llun/activities.schema",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Validate ActivityPub with Zod",
   "exports": {
     "types": "./dist/index.d.ts",
@@ -8,7 +8,8 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "release": "rm -rf dist && npm run build && npm publish --access public"
   },
   "author": "Maythee Anegboonlap <null@llun.dev>",
   "license": "MIT",
