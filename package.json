@@ -1,5 +1,5 @@
 {
-  "name": "activities.schema",
+  "name": "@llun/activities.schema",
   "version": "0.0.1",
   "description": "Validate ActivityPub with Zod",
   "exports": {
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc"
   },
-  "author": "Maythee Anegboonlap<null@llun.dev>",
+  "author": "Maythee Anegboonlap <null@llun.dev>",
   "license": "MIT",
   "dependencies": {
     "zod": "^3.22.4"
