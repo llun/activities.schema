@@ -1,4 +1,5 @@
 import { z } from "zod";
+
 import { Note } from "./note.js";
 
 export const Like = z.object({

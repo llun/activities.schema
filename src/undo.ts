@@ -1,4 +1,5 @@
 import { z } from "zod";
+
 import { Follow } from "./follow.js";
 import { Like } from "./like.js";
 
