@@ -7,3 +7,5 @@ export const Accept = z.object({
   type: z.literal("Accept"),
   object: Follow,
 });
+
+export type Accept = z.infer<typeof Accept>;
