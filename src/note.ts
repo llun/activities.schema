@@ -1,4 +1,7 @@
 import { z } from "zod";
+import { Attachment } from "./note/attachment.js";
+import { Emoji } from "./note/emoji.js";
+import { Mention } from "./note/mention.js";
 
 const BaseContent = z.object({
   id: z.string(),
@@ -19,6 +22,9 @@ const BaseContent = z.object({
   contentMap: z
     .record(z.string(), { description: "Note content in each locale" })
     .optional(),
+
+  attachment: z.union([Attachment, Attachment.array()]).optional(),
+  tag: z.union([Mention, Emoji]).array(),
 
   published: z.string({ description: "Object published datetime" }),
   updated: z.string({ description: "Object updated datetime" }).optional(),

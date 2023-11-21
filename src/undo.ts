@@ -9,3 +9,5 @@ export const Undo = z.object({
   type: z.literal("Undo"),
   object: z.union([Like, Follow]),
 });
+
+export type Undo = z.infer<typeof Undo>;
