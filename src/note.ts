@@ -11,7 +11,7 @@ const BaseContent = z.object({
   to: z.union([z.string(), z.string().array()]),
   cc: z.union([z.string(), z.string().array()]),
 
-  inReplyTo: z.string().optional(),
+  inReplyTo: z.string().nullable(),
 
   summary: z.string({ description: "Note short summary" }).optional(),
   summaryMap: z
