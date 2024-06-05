@@ -40,7 +40,7 @@ const BaseAccount = z.object({
     description:
       "A static version of the `header`. Equal to `header` if its value is a static image; different if `header` is an animated GIF",
   }),
-  loacked: z.string({
+  locked: z.boolean({
     description: "Whether the actor manually approves follow requests",
   }),
   fields: AccountField.array().describe(
@@ -104,7 +104,7 @@ const BaseAccount = z.object({
 type BaseAccount = z.infer<typeof BaseAccount>;
 
 export const Account = BaseAccount.extend({
-  moved: BaseAccount.nullable().describe(
+  moved: BaseAccount.nullish().describe(
     "Indicates that the profile is currently inactive and that its user has moved to a new account"
   ),
 });
