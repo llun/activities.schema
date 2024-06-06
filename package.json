@@ -1,17 +1,10 @@
 {
   "name": "@llun/activities.schema",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Validate ActivityPub and Mastodon with Zod",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.mjs",
-      "types": "./dist/cjs/index.d.ts"
-    }
-  },
+  "types": "dist/types/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "mkdir -p dist && tsc --module commonjs --outDir dist/cjs && tsc --module node16 --outDir dist/esm && tsc --emitDeclarationOnly --declaration --moduleResolution node16 --module node16 --outDir dist/types",
