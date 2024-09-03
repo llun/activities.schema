@@ -7,7 +7,9 @@
     "noEmitOnError": true,
     "strict": true,
     "resolveJsonModule": false,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext"
   },
   "include": ["src"]
 }
