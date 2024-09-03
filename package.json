@@ -7,7 +7,7 @@
   "types": "dist/types/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "mkdir -p dist && tsc --module commonjs --outDir dist/cjs && tsc --module node16 --outDir dist/esm && tsc --emitDeclarationOnly --declaration --moduleResolution node16 --module node16 --outDir dist/types",
+    "build": "mkdir -p dist && tsc --module commonjs --outDir dist/cjs && tsc --module NodeNext --outDir dist/esm && tsc --emitDeclarationOnly --declaration --moduleResolution node16 --module node16 --outDir dist/types",
     "release": "rm -rf dist && npm run build && npm publish --access public"
   },
   "author": "Maythee Anegboonlap <null@llun.dev>",
