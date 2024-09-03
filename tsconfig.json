@@ -8,7 +8,8 @@
     "strict": true,
     "resolveJsonModule": false,
     "isolatedModules": true,
-    "moduleResolution": "NodeNext"
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext"
   },
   "include": ["src"]
 }
