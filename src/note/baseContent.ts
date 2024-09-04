@@ -11,19 +11,19 @@ export const BaseContent = z.object({
   to: z.union([z.string(), z.string().array()]),
   cc: z.union([z.string(), z.string().array()]),
 
-  inReplyTo: z.string().nullable(),
+  inReplyTo: z.string().nullish(),
 
-  summary: z.string({ description: "Note short summary" }).optional(),
+  summary: z.string({ description: "Note short summary" }).nullish(),
   summaryMap: z
     .record(z.string(), { description: "Note short summary in each locale" })
-    .optional(),
+    .nullish(),
 
   content: z
     .union([
       z.string({ description: "Note content" }),
       z.string({ description: "Note content in array from Wordpress" }).array(),
     ])
-    .optional(),
+    .nullish(),
   contentMap: z
     .union([
       z.record(z.string(), { description: "Note content in each locale" }),
@@ -34,13 +34,13 @@ export const BaseContent = z.object({
         })
         .array(),
     ])
-    .optional(),
+    .nullish(),
 
-  attachment: z.union([Attachment, Attachment.array()]).optional(),
+  attachment: z.union([Attachment, Attachment.array()]).nullish(),
   tag: z.union([Mention, Emoji]).array(),
 
   published: z.string({ description: "Object published datetime" }),
-  updated: z.string({ description: "Object updated datetime" }).optional(),
+  updated: z.string({ description: "Object updated datetime" }).nullish(),
 });
 
 export type BaseContent = z.infer<typeof BaseContent>;
