@@ -18,12 +18,21 @@ export const BaseContent = z.object({
     .record(z.string(), { description: "Note short summary in each locale" })
     .optional(),
 
-  content: z.string({ description: "Note content" }).optional(),
+  content: z
+    .union([
+      z.string({ description: "Note content" }),
+      z.string({ description: "Note content in array from Wordpress" }).array(),
+    ])
+    .optional(),
   contentMap: z
     .union([
       z.record(z.string(), { description: "Note content in each locale" }),
-      // Content map can be array when send from Wordpress
-      z.string({ description: "Note content in array from Wordpress" }).array(),
+      z
+        .string({
+          description:
+            "Some activity pub server use content map as array with content in the first element",
+        })
+        .array(),
     ])
     .optional(),
 
