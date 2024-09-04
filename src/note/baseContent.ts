@@ -20,7 +20,11 @@ export const BaseContent = z.object({
 
   content: z.string({ description: "Note content" }).optional(),
   contentMap: z
-    .record(z.string(), { description: "Note content in each locale" })
+    .union([
+      z.record(z.string(), { description: "Note content in each locale" }),
+      // Content map can be array when send from Wordpress
+      z.string({ description: "Note content in array from Wordpress" }).array(),
+    ])
     .optional(),
 
   attachment: z.union([Attachment, Attachment.array()]).optional(),
