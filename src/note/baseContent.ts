@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { Attachment } from "./attachment.js";
-import { Emoji } from "./emoji.js";
-import { Mention } from "./mention.js";
+import { Tag } from "./tag.js";
 
 export const BaseContent = z.object({
   id: z.string(),
@@ -37,7 +36,7 @@ export const BaseContent = z.object({
     .nullish(),
 
   attachment: z.union([Attachment, Attachment.array()]).nullish(),
-  tag: z.union([Mention, Emoji]).array(),
+  tag: z.union([Tag, Tag.array()]),
 
   published: z.string({ description: "Object published datetime" }),
   updated: z.string({ description: "Object updated datetime" }).nullish(),
