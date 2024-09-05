@@ -4,7 +4,9 @@ import { Tag } from "./tag.js";
 
 export const BaseContent = z.object({
   id: z.string(),
-  url: z.string({ description: "Note URL" }),
+  url: z
+    .string({ description: "Note URL. This is optional for Pleloma" })
+    .nullish(),
   attributedTo: z.string({ description: "Note publisher" }),
 
   to: z.union([z.string(), z.string().array()]),
