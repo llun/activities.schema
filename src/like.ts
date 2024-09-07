@@ -2,8 +2,9 @@ import { z } from "zod";
 
 import { Note } from "./note.js";
 
+export const ENTITY_TYPE_LIKE = "Like";
 export const Like = z.object({
-  type: z.literal("Like"),
+  type: z.literal(ENTITY_TYPE_LIKE),
   id: z.string(),
   actor: z.string(),
   object: z.union([z.string(), Note]),
