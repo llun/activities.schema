@@ -7,4 +7,8 @@ export * from "./reject.js";
 export * from "./undo.js";
 export * from "./announce.js";
 
+export * from "./note/emoji.js";
+export * from "./note/mention.js";
+export * from "./note/hashtag.js";
+
 export * as Mastodon from "./mastodon/index.js";
