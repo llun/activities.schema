@@ -1,6 +1,6 @@
 {
   "name": "@llun/activities.schema",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "Validate ActivityPub and Mastodon with Zod",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -13,10 +13,10 @@
   "author": "Maythee Anegboonlap <null@llun.dev>",
   "license": "MIT",
   "dependencies": {
-    "zod": "^3.23.8"
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "typescript": "^5.6.2"
+    "typescript": "^5.7.2"
   },
-  "packageManager": "yarn@4.4.1"
+  "packageManager": "yarn@4.5.3"
 }
