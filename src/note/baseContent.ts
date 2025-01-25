@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { Attachment } from "./attachment.js";
 import { Tag } from "./tag.js";
+import { Collection } from "../collection.js";
 
 export const BaseContent = z.object({
   id: z.string(),
@@ -36,6 +37,7 @@ export const BaseContent = z.object({
         .array(),
     ])
     .nullish(),
+  replies: Collection.nullish(),
 
   attachment: z.union([Attachment, Attachment.array()]).nullish(),
   tag: z.union([Tag, Tag.array()]),
