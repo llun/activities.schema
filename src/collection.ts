@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const CollectionWithFirstPage = z.object({
+export const CollectionWithFirstPage = z.object({
   id: z.string(),
   type: z.literal("Collection"),
   first: z.object({
@@ -10,13 +10,15 @@ const CollectionWithFirstPage = z.object({
     items: z.array(z.any()),
   }),
 });
+export type CollectionWithFirstPage = z.infer<typeof CollectionWithFirstPage>;
 
-const CollectionWithItems = z.object({
+export const CollectionWithItems = z.object({
   id: z.string(),
   type: z.literal("Collection"),
   totalItems: z.number(),
   items: z.array(z.any()),
 });
+export type CollectionWithItems = z.infer<typeof CollectionWithItems>;
 
 export const Collection = z.union([
   CollectionWithFirstPage,
