@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { Image } from "./image.js";
+import { Image } from "../image.js";
 
 export const Emoji = z.object({
   type: z.literal("Emoji"),

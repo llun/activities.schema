@@ -13,4 +13,6 @@ export * from "./note/emoji.js";
 export * from "./note/mention.js";
 export * from "./note/hashtag.js";
 
+export * from "./person.js";
+
 export * as Mastodon from "./mastodon/index.js";
