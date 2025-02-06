@@ -12,6 +12,7 @@ export * from "./tombstone.js";
 export * from "./note/emoji.js";
 export * from "./note/mention.js";
 export * from "./note/hashtag.js";
+export * from "./note/document.js";
 
 export * from "./person.js";
 
