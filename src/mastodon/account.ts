@@ -1,7 +1,8 @@
 // This schema is base on https://docs.joinmastodon.org/entities/Account/
 import { z } from "zod";
-import { AccountField } from "./accountField.js";
+import { Field } from "./account/field.js";
 import { CustomEmoji } from "./customEmoji.js";
+import { Source } from "./account/source.js";
 
 const BaseAccount = z.object({
   id: z.string({
@@ -17,6 +18,9 @@ const BaseAccount = z.object({
   }),
   url: z.string({
     description: "The location of the user's profile page",
+  }),
+  uri: z.string({
+    description: "The location of the actor's profile page",
   }),
   display_name: z.string({
     description: "The profile's display name",
@@ -43,7 +47,10 @@ const BaseAccount = z.object({
   locked: z.boolean({
     description: "Whether the actor manually approves follow requests",
   }),
-  fields: AccountField.array().describe(
+  source: Source.describe(
+    "An extra attribute that contains source values to be used with API methods that verify credentials and update credentials"
+  ),
+  fields: Field.array().describe(
     "Additional metadata attached to a profile as name-value pairs"
   ),
   emojis: CustomEmoji.array().describe(

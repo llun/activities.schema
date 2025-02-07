@@ -1,7 +1,7 @@
 // This schema is base on https://docs.joinmastodon.org/entities/Account/#Field
 import { z } from "zod";
 
-export const AccountField = z.object({
+export const Field = z.object({
   name: z.string({
     description: "The key of a given field’s key-value pair",
   }),
@@ -15,4 +15,4 @@ export const AccountField = z.object({
     })
     .nullable(),
 });
-export type AccountField = z.infer<typeof AccountField>;
+export type Field = z.infer<typeof Field>;
