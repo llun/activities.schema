@@ -19,9 +19,6 @@ const BaseAccount = z.object({
   url: z.string({
     description: "The location of the user's profile page",
   }),
-  uri: z.string({
-    description: "The location of the actor's profile page",
-  }),
   display_name: z.string({
     description: "The profile's display name",
   }),
