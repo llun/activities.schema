@@ -28,7 +28,7 @@ export const BaseMediaAttachment = z.object({
     })
     .nullable(),
 
-  bluehash: z
+  blurhash: z
     .string({
       description:
         "hash computed by the [BlurHash algorithm](https://github.com/woltapp/blurhash), for generating colorful preview thumbnails when media has not been downloaded yet.",
