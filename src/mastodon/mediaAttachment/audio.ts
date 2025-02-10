@@ -7,12 +7,12 @@ export const Audio = BaseMediaAttachment.extend({
   meta: z.object({
     length: z.string(),
     duration: z.number(),
-    audio_encode: z.string(),
-    audio_bitrate: z.string(),
-    audio_channels: z.string(),
+    audio_encode: z.string().nullish(),
+    audio_bitrate: z.string().nullish(),
+    audio_channels: z.string().nullish(),
     original: z.object({
       duration: z.number(),
-      bitrate: z.number(),
+      bitrate: z.number().nullish(),
     }),
   }),
 });

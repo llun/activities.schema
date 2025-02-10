@@ -4,40 +4,42 @@ import { BaseMediaAttachment } from "./base.js";
 
 export const Video = BaseMediaAttachment.extend({
   type: z.literal("video").describe("The type of the attachment (Video clip)"),
-  meta: z.object({
-    length: z.string(),
-    duration: z.number(),
-    fps: z.number(),
+  meta: z
+    .object({
+      length: z.string().nullish(),
+      duration: z.number().nullish(),
+      fps: z.number().nullish(),
 
-    size: z.string({
-      description: "Video width and height in string wxh format",
-    }),
-    width: z.number(),
-    height: z.number(),
-    aspect: z.number({
-      description: "Aspect ratio of the video (width/height)",
-    }),
-
-    audio_encode: z.string(),
-    audio_bitrate: z.string(),
-    audio_channels: z.string(),
-
-    original: z.object({
+      size: z.string({
+        description: "Video width and height in string wxh format",
+      }),
       width: z.number(),
       height: z.number(),
-      frame_rate: z.string(),
-      duration: z.number(),
-      bitrate: z.number(),
-    }),
-    small: z
-      .object({
+      aspect: z.number({
+        description: "Aspect ratio of the video (width/height)",
+      }),
+
+      audio_encode: z.string().nullish(),
+      audio_bitrate: z.string().nullish(),
+      audio_channels: z.string().nullish(),
+
+      original: z.object({
         width: z.number(),
         height: z.number(),
-        size: z.string(),
-        aspect: z.number(),
-      })
-      .describe("A video preview in static image")
-      .nullish(),
-  }),
+        frame_rate: z.string().nullish(),
+        duration: z.number().nullish(),
+        bitrate: z.number().nullish(),
+      }),
+      small: z
+        .object({
+          width: z.number(),
+          height: z.number(),
+          size: z.string(),
+          aspect: z.number(),
+        })
+        .describe("A video preview in static image")
+        .nullish(),
+    })
+    .nullish(),
 });
 export type Video = z.infer<typeof Video>;

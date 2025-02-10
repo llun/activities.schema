@@ -9,9 +9,11 @@ export const BaseMediaAttachment = z.object({
   url: z.string({
     description: "The location of the original full-size attachment",
   }),
-  preview_url: z.string({
-    description: "The location of a scaled-down preview of the attachment",
-  }),
+  preview_url: z
+    .string({
+      description: "The location of a scaled-down preview of the attachment",
+    })
+    .nullable(),
   remote_url: z
     .string({
       description:
@@ -26,9 +28,11 @@ export const BaseMediaAttachment = z.object({
     })
     .nullable(),
 
-  bluehash: z.string({
-    description:
-      "hash computed by the [BlurHash algorithm](https://github.com/woltapp/blurhash), for generating colorful preview thumbnails when media has not been downloaded yet.",
-  }),
+  bluehash: z
+    .string({
+      description:
+        "hash computed by the [BlurHash algorithm](https://github.com/woltapp/blurhash), for generating colorful preview thumbnails when media has not been downloaded yet.",
+    })
+    .nullable(),
 });
 export type BaseMediaAttachment = z.infer<typeof BaseMediaAttachment>;
