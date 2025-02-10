@@ -1,7 +1,7 @@
 // This schema is base on https://docs.joinmastodon.org/entities/Status/
 import { z } from "zod";
 import { Account } from "../account.js";
-import { Visibility } from "./visibility.js";
+import { Visibility } from "../visibility.js";
 import { MediaAttachment } from "../mediaAttachment/index.js";
 import { Application } from "./application.js";
 import { CustomEmoji } from "../customEmoji.js";
