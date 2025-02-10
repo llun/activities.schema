@@ -6,5 +6,13 @@ import { Video } from "./video.js";
 import { Audio } from "./audio.js";
 import { Unknown } from "./unknown.js";
 
+export const MediaTypes = {
+  Gifv,
+  Image,
+  Video,
+  Audio,
+  Unknown,
+};
+
 export const MediaAttachment = z.union([Image, Gifv, Video, Audio, Unknown]);
 export type MediaAttachment = z.infer<typeof MediaAttachment>;
