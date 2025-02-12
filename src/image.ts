@@ -2,7 +2,7 @@ import { z } from "zod";
 
 export const Image = z.object({
   type: z.literal("Image"),
-  mediaType: z.string(),
+  mediaType: z.string().nullish(),
   url: z.string(),
 });
 
