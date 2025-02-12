@@ -7,7 +7,7 @@ export const CollectionWithFirstPage = z.object({
     type: z.literal("CollectionPage"),
     next: z.string(),
     partOf: z.string(),
-    items: z.array(z.any()),
+    items: z.union([z.string(), z.array(z.any())]),
   }),
 });
 export type CollectionWithFirstPage = z.infer<typeof CollectionWithFirstPage>;
@@ -16,7 +16,7 @@ export const CollectionWithItems = z.object({
   id: z.string(),
   type: z.literal("Collection"),
   totalItems: z.number(),
-  items: z.array(z.any()),
+  items: z.union([z.string(), z.array(z.any())]),
 });
 export type CollectionWithItems = z.infer<typeof CollectionWithItems>;
 
