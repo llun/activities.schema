@@ -10,7 +10,7 @@ export const Person = z.object({
   outbox: z.string().url(),
   preferredUsername: z.string(),
   name: z.string(),
-  summary: z.string(),
+  summary: z.string().nullish(),
   url: z.string().url(),
   published: z.string(),
   publicKey: z.object({
