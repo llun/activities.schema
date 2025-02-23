@@ -12,7 +12,7 @@ export const Person = z.object({
   name: z.string(),
   summary: z.string().nullish(),
   url: z.string().url(),
-  published: z.string(),
+  published: z.string().nullish(),
   publicKey: z.object({
     id: z.string(),
     owner: z.string(),
@@ -23,7 +23,7 @@ export const Person = z.object({
       sharedInbox: z.string().optional(),
     })
     .optional(),
-  icon: Image.optional(),
-  image: Image.optional(),
+  icon: Image.nullish(),
+  image: Image.nullish(),
 });
 export type Person = z.infer<typeof Person>;

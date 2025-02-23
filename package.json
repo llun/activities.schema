@@ -1,6 +1,6 @@
 {
   "name": "@llun/activities.schema",
-  "version": "0.2.28",
+  "version": "0.2.29",
   "description": "Validate ActivityPub and Mastodon with Zod",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
