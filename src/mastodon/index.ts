@@ -1,6 +1,7 @@
 export * from "./account.js";
 export * from "./account/field.js";
 export * from "./account/source.js";
+export * from "./account/relationship.js";
 export * from "./customEmoji.js";
 export * from "./filterResult.js";
 export * from "./previewCard.js";
