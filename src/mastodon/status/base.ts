@@ -8,6 +8,8 @@ import { CustomEmoji } from "../customEmoji.js";
 import { Poll } from "../poll/index.js";
 import { PreviewCard } from "../previewCard.js";
 import { FilterResult } from "../filterResult.js";
+import { Mention } from "./mention.js";
+import { Tag } from "./tag.js";
 
 export const BaseStatus = z.object({
   id: z.string({
@@ -35,6 +37,11 @@ export const BaseStatus = z.object({
   emojis: CustomEmoji.array().describe(
     "Custom emoji to be used when rendering status content"
   ),
+
+  mentions: Mention.array().describe(
+    "Mentions of users within the status content"
+  ),
+  tags: Tag.array().describe("Hashtags used within the status content"),
 
   reblogs_count: z.number({
     description: "How many boosts this status has received",
