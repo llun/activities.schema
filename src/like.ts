@@ -1,13 +1,22 @@
 import { z } from "zod";
+import { BaseActivity } from "./activity.js";
+import { BaseObjectSchema } from "./note/baseContent.js"; // For Note, Article, etc.
+import { Actor } from "./actor.js"; // e.g. liking a profile
 
-import { Note } from "./note.js";
+// The object of a Like can be any ActivityPub object or a link to one.
+const LikedObject = z.union([
+  z.string().url(),
+  BaseObjectSchema,
+  Actor
+]);
 
-export const ENTITY_TYPE_LIKE = "Like";
-export const Like = z.object({
-  type: z.literal(ENTITY_TYPE_LIKE),
-  id: z.string(),
-  actor: z.string(),
-  object: z.union([z.string(), Note]),
+export const LikeActivity = BaseActivity.extend({
+  type: z.literal("Like"),
+  object: LikedObject.describe("The object that is being liked."),
 });
 
-export type Like = z.infer<typeof Like>;
+export type LikeActivity = z.infer<typeof LikeActivity>;
+
+// Alias for backward compatibility or if used as an object in Undo
+export const Like = LikeActivity;
+export type Like = LikeActivity;

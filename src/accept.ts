@@ -1,12 +1,17 @@
 import { z } from "zod";
+import { BaseActivity } from "./activity.js";
+import { Follow } from "./follow.js"; // Follow activity schema
+import { BaseObjectSchema } from "./note/baseContent.js"; // Or a more generic object/link type
 
-import { Follow } from "./follow.js";
+const AcceptedObject = z.union([
+  Follow,
+  BaseObjectSchema, // e.g. accepting a friend request represented by an Offer activity
+  z.string().url() // URL to an object being accepted
+]);
 
-export const Accept = z.object({
-  id: z.string(),
-  actor: z.string(),
+export const AcceptActivity = BaseActivity.extend({
   type: z.literal("Accept"),
-  object: Follow,
+  object: AcceptedObject.describe("The object that was accepted (e.g., a Follow activity, an Offer)."),
 });
 
-export type Accept = z.infer<typeof Accept>;
+export type AcceptActivity = z.infer<typeof AcceptActivity>;

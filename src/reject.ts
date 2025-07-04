@@ -1,12 +1,18 @@
 import { z } from "zod";
+import { BaseActivity } from "./activity.js";
+import { FollowActivity } from "./follow.js"; // Typically rejecting a Follow activity
+import { BaseObjectSchema } from "./note/baseContent.js"; // Or a more generic object/link type
 
-import { Follow } from "./follow.js";
+// Object being rejected, commonly a FollowActivity or an Offer.
+const RejectedObject = z.union([
+  FollowActivity,
+  BaseObjectSchema, // e.g. rejecting an Offer activity
+  z.string().url()
+]);
 
-export const Reject = z.object({
-  id: z.string(),
-  actor: z.string(),
+export const RejectActivity = BaseActivity.extend({
   type: z.literal("Reject"),
-  object: Follow,
+  object: RejectedObject.describe("The object that was rejected (e.g., a Follow activity)."),
 });
 
-export type Reject = z.infer<typeof Reject>;
+export type RejectActivity = z.infer<typeof RejectActivity>;
