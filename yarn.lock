@@ -10,7 +10,7 @@ __metadata:
   resolution: "@llun/activities.schema@workspace:."
   dependencies:
     typescript: "npm:^5.8.3"
-    zod: "npm:^3.25.71"
+    zod: "npm:^4.0.0"
   languageName: unknown
   linkType: soft
 
@@ -34,9 +34,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.25.71":
-  version: 3.25.71
-  resolution: "zod@npm:3.25.71"
-  checksum: 10c0/ccb251859609e6eed04b83f96ad7b2b7a189ca78b47176cde2c368102a5416b9c472e91b3fd96ceaa5043b2e513b3aec39fd99c36686ad2ad84f6c440afca53a
+"zod@npm:^4.0.0":
+  version: 4.0.5
+  resolution: "zod@npm:4.0.5"
+  checksum: 10c0/59449d731ca63849b6bcb14300aa6e2f042d440b3ed294b45c248519aec78780f85a5d1939a62c2ce82e9dc60afca77c8005e0a98d7517b0c2586d6c76940424
   languageName: node
   linkType: hard

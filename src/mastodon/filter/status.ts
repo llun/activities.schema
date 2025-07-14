@@ -2,9 +2,7 @@
 import { z } from "zod";
 
 export const FilterStatus = z.object({
-  id: z.string({ description: "The ID of the FilterStatus in the database" }),
-  status_id: z.string({
-    description: "The ID of the Status that will be filtered",
-  }),
+  id: z.string().describe("The ID of the FilterStatus in the database"),
+  status_id: z.string().describe("The ID of the Status that will be filtered"),
 });
 export type FilterStatus = z.infer<typeof FilterStatus>;

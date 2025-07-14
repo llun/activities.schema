@@ -10,14 +10,10 @@ export const Video = BaseMediaAttachment.extend({
       duration: z.number().nullish(),
       fps: z.number().nullish(),
 
-      size: z.string({
-        description: "Video width and height in string wxh format",
-      }),
+      size: z.string().describe("Video width and height in string wxh format"),
       width: z.number(),
       height: z.number(),
-      aspect: z.number({
-        description: "Aspect ratio of the video (width/height)",
-      }),
+      aspect: z.number().describe("Aspect ratio of the video (width/height)"),
 
       audio_encode: z.string().nullish(),
       audio_bitrate: z.string().nullish(),

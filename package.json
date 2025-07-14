@@ -13,7 +13,7 @@
   "author": "Maythee Anegboonlap <null@llun.dev>",
   "license": "MIT",
   "dependencies": {
-    "zod": "^3.25.71"
+    "zod": "^4.0.0"
   },
   "devDependencies": {
     "typescript": "^5.8.3"
