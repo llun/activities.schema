@@ -4,19 +4,17 @@ import { FilterKeyword } from "./keyword.js";
 import { FilterStatus } from "./status.js";
 
 export const Filter = z.object({
-  id: z.string({ description: "The ID of the Filter in the database" }),
-  title: z.string({
-    description: "A title given by the user to name the filter",
-  }),
+  id: z.string().describe("The ID of the Filter in the database"),
+  title: z.string().describe("A title given by the user to name the filter"),
   context: z
     .enum(["home", "notifications", "public", "thread", "account"])
     .array()
     .describe("The contexts in which the filter should be applied"),
   expires_at: z
-    .string({
-      description:
-        "When the filter should no longer be applied in ISO 8601 Datetime format or null if the filter does not expire",
-    })
+    .string()
+    .describe(
+      "When the filter should no longer be applied in ISO 8601 Datetime format or null if the filter does not expire"
+    )
     .nullable(),
   filter_action: z
     .enum(["warn", "hide"])

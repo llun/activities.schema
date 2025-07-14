@@ -4,26 +4,26 @@ import { CustomEmoji } from "../customEmoji.js";
 import { Option } from "./option.js";
 
 export const Poll = z.object({
-  id: z.string({ description: "The ID of the poll in the database" }),
+  id: z.string().describe("The ID of the poll in the database"),
   expires_at: z
-    .string({
-      description:
-        "The time the poll ends in ISO 8601 datetime or null if the poll does not end",
-    })
+    .string()
+    .describe(
+      "The time the poll ends in ISO 8601 datetime or null if the poll does not end"
+    )
     .nullable(),
-  expired: z.boolean({ description: "Whether the poll has expired" }),
-  multiple: z.boolean({ description: "Whether multiple choices are allowed" }),
-  votes_count: z.number({ description: "The number of votes the poll has" }),
-  voters_count: z.number({ description: "The number of actors that voted" }),
+  expired: z.boolean().describe("Whether the poll has expired"),
+  multiple: z.boolean().describe("Whether multiple choices are allowed"),
+  votes_count: z.number().describe("The number of votes the poll has"),
+  voters_count: z.number().describe("The number of actors that voted"),
   options: Option.array().describe("Possible answers for the poll"),
   emojis: CustomEmoji.array().describe(
     "Custom emoji to be used for rendering poll options"
   ),
   voted: z
-    .boolean({
-      description:
-        "When called with a user token, has the authorized user voted?",
-    })
+    .boolean()
+    .describe(
+      "When called with a user token, has the authorized user voted?"
+    )
     .optional(),
   own_votes: z
     .number()
