@@ -14,6 +14,8 @@ export * from "./note/mention.js";
 export * from "./note/hashtag.js";
 export * from "./note/document.js";
 
+export { QuestionOption } from "./question/note.js";
+
 export * from "./actor.js";
 
 export * as Mastodon from "./mastodon/index.js";
