@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { Note } from "./note.js";
+import { Note } from "./content.js";
 
 export const ENTITY_TYPE_LIKE = "Like";
 export const Like = z.object({
