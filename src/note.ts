@@ -1,8 +1,2 @@
-import { z } from "zod";
-import { BaseContent } from "./note/baseContent.js";
-
-export const ENTITY_TYPE_NOTE = "Note";
-export const Note = BaseContent.extend({
-  type: z.literal(ENTITY_TYPE_NOTE),
-});
-export type Note = z.infer<typeof Note>;
+// Re-export from content.ts for backward compatibility
+export { ENTITY_TYPE_NOTE, Note } from "./content.js";
