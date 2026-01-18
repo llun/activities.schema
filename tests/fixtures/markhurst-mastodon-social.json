@@ -1,0 +1,89 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    {
+      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+      "toot": "http://joinmastodon.org/ns#",
+      "featured": {
+        "@id": "toot:featured",
+        "@type": "@id"
+      },
+      "featuredTags": {
+        "@id": "toot:featuredTags",
+        "@type": "@id"
+      },
+      "alsoKnownAs": {
+        "@id": "as:alsoKnownAs",
+        "@type": "@id"
+      },
+      "movedTo": {
+        "@id": "as:movedTo",
+        "@type": "@id"
+      },
+      "schema": "http://schema.org#",
+      "PropertyValue": "schema:PropertyValue",
+      "value": "schema:value",
+      "discoverable": "toot:discoverable",
+      "suspended": "toot:suspended",
+      "memorial": "toot:memorial",
+      "indexable": "toot:indexable",
+      "attributionDomains": {
+        "@id": "toot:attributionDomains",
+        "@type": "@id"
+      },
+      "focalPoint": {
+        "@container": "@list",
+        "@id": "toot:focalPoint"
+      }
+    }
+  ],
+  "id": "https://mastodon.social/users/markhurst",
+  "type": "Person",
+  "following": "https://mastodon.social/users/markhurst/following",
+  "followers": "https://mastodon.social/users/markhurst/followers",
+  "inbox": "https://mastodon.social/users/markhurst/inbox",
+  "outbox": "https://mastodon.social/users/markhurst/outbox",
+  "featured": "https://mastodon.social/users/markhurst/collections/featured",
+  "featuredTags": "https://mastodon.social/users/markhurst/collections/tags",
+  "preferredUsername": "markhurst",
+  "name": "Mark Hurst",
+  "summary": "<p>Host of Techtonic on WFMU: <a href=\"https://techtonic.fm\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">techtonic.fm</span><span class=\"invisible\"></span></a> .. Projects and bio at <a href=\"https://creativegood.com\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">creativegood.com</span><span class=\"invisible\"></span></a> .. anti-Big Tech, pro-everyone who&#39;s trying to make tech better.</p>",
+  "url": "https://mastodon.social/@markhurst",
+  "manuallyApprovesFollowers": false,
+  "discoverable": true,
+  "indexable": true,
+  "published": "2018-08-09T00:00:00Z",
+  "memorial": false,
+  "publicKey": {
+    "id": "https://mastodon.social/users/markhurst#main-key",
+    "owner": "https://mastodon.social/users/markhurst",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8MN4CoaxL1LKp8YvN6gy\ne1x+Krh5kGgaboACzrGOB+i+8laENNlHFFHD0teX9vnOe8NXoA7jUH2EwM3CMwy6\nHMA4BiJRq3zGSjYh0IZzVXR2R8YGYn5e6EBMELWZ+MsbQsuLM5fmacK7l/ZvEqiN\nUYed3cMrm3Zjv6xm0da48eWGHEsAM2bscFnHXGPslnsC/KvxmjwVuVt1D52w7BMs\n01iyVaIAxB4D/1c6MwwYhVQbn/8W+evoCzClfjX7TDHS0rr/jmKBpooMIe3bMwv1\nAL/kdifl+m5FXOQIGMp6KqB1yONoV7r2/3TYkgcClegrXSWACAS1AgllmVhKU2RC\nMQIDAQAB\n-----END PUBLIC KEY-----\n"
+  },
+  "tag": [],
+  "attachment": [
+    {
+      "type": "PropertyValue",
+      "name": "RADIO SHOW / PODCAST",
+      "value": "<a href=\"https://techtonic.fm\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">techtonic.fm</span><span class=\"invisible\"></span></a>"
+    },
+    {
+      "type": "PropertyValue",
+      "name": "WRITING / PROJECTS / BIO",
+      "value": "<a href=\"https://creativegood.com\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">creativegood.com</span><span class=\"invisible\"></span></a>"
+    }
+  ],
+  "endpoints": {
+    "sharedInbox": "https://mastodon.social/inbox"
+  },
+  "icon": {
+    "type": "Image",
+    "mediaType": "image/jpeg",
+    "url": "https://files.mastodon.social/accounts/avatars/000/409/823/original/0621f774f8f78712.jpg"
+  },
+  "image": {
+    "type": "Image",
+    "mediaType": "image/jpeg",
+    "url": "https://files.mastodon.social/accounts/headers/000/409/823/original/cf3f0ee5cb4eda1f.jpg"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    {
+      "ostatus": "http://ostatus.org#",
+      "vcard": "http://www.w3.org/2006/vcard/ns#",
+      "dfrn": "http://purl.org/macgirvin/dfrn/1.0/",
+      "diaspora": "https://diasporafoundation.org/ns/",
+      "litepub": "http://litepub.social/ns#",
+      "toot": "http://joinmastodon.org/ns#",
+      "featured": {
+        "@id": "toot:featured",
+        "@type": "@id"
+      },
+      "schema": "http://schema.org#",
+      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+      "sensitive": "as:sensitive",
+      "Hashtag": "as:Hashtag",
+      "quoteUrl": "as:quoteUrl",
+      "conversation": "ostatus:conversation",
+      "directMessage": "litepub:directMessage",
+      "discoverable": "toot:discoverable",
+      "PropertyValue": "schema:PropertyValue",
+      "value": "schema:value"
+    }
+  ],
+  "id": "https://poliverso.org/profile/notizie",
+  "diaspora:guid": "0477a01e-1061-1968-9f0b-b33646656918",
+  "type": "Person",
+  "following": "https://poliverso.org/following/notizie",
+  "followers": "https://poliverso.org/followers/notizie",
+  "inbox": "https://poliverso.org/inbox/notizie",
+  "outbox": "https://poliverso.org/outbox/notizie",
+  "featured": "https://poliverso.org/featured/notizie",
+  "preferredUsername": "notizie",
+  "name": "notizie",
+  "url": "https://poliverso.org/profile/notizie",
+  "manuallyApprovesFollowers": false,
+  "discoverable": false,
+  "publicKey": {
+    "id": "https://poliverso.org/profile/notizie#main-key",
+    "owner": "https://poliverso.org/profile/notizie",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuWBh9o5ClDaoicSDd1Me\nTzWVd4K/UbNG0P1Qjml0ZMrT01OUhkoyASkI9xYnRLGwlG5ojGaMFLsP+mjDMTci\n3TgjJi8avAD5Ugez3dekpMAmVLWXVbEnzvrBf3yx6q+b03Ou9E1dRjcxw1eph9PB\njyG5EQG0knMdK85qaEyltqKwwWnh24SVsjngu+d7giUfE3kHtuXvLQCqinjta7DP\nFRwfAS7TGdF4A7FVyNgfAmTDNaP9BISZgtzZM0663LcVrbeP0+zRu3nGZ/vzhFE4\ncQhB4a4A4+iMJAK5U/OTz7a76EK7PmQapTLFW50s+WSlmMm9xzOBuCyzwgixMr2C\nVwsJi+rs/QfQIPZMV2HrypXosDGaBpR5IlcoTdXJCDyfR60TK8Vc6plwzJ1bPIO+\n5kfZpf7r+w3ZxFhWd1NweXScouZuK4NlgNoVEQY6npuEKOkJEpC8rGlKI2IkzuA2\ng8xV0tAajjtF2WCH7MLxPZvJsdYSlxOEdQyH/aO0uQICpgJmu6BdkcebOLf7dG+u\ns+R47cTp9bgq150GEeCWMJdyuGVe+HTPdP9Vm9TPFSOsBhXeBBtVUpjslzdcEsFQ\nnjqGcslVtW9/Hv9pCwMF6Dlbs2yKlLVcKucsk0gTmpm0wUAJ3V/kN+auGNY2Yai0\ny94GyJ4xQ9oDTCLRiJq1j5cCAwEAAQ==\n-----END PUBLIC KEY-----\n"
+  },
+  "endpoints": {
+    "sharedInbox": "https://poliverso.org/inbox"
+  },
+  "generator": {
+    "id": "https://poliverso.org/friendica",
+    "type": "Application",
+    "name": "Friendica 'Interrupted Fern' 2024.12-1576",
+    "url": "https://poliverso.org"
+  }
+}

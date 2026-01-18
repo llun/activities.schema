@@ -1,0 +1,81 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://udongein.xyz/schemas/litepub-0.1.jsonld",
+    {
+      "@language": "und"
+    }
+  ],
+  "alsoKnownAs": [],
+  "attachment": [
+    {
+      "name": "fungus",
+      "type": "PropertyValue",
+      "value": "💯"
+    },
+    {
+      "name": "gallery",
+      "type": "PropertyValue",
+      "value": "<a href=\"https://polaroid.locahlo.st/gallery#xjUngEPwUQcsIme0LyiLK9KD\" rel=\"ugc\">https://polaroid.locahlo.st/gallery#xjUngEPwUQcsIme0LyiLK9KD</a>"
+    },
+    {
+      "name": "authorized_keys",
+      "type": "PropertyValue",
+      "value": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGWe0VIMiPkxBu0mpon+b156rXeqhr+IkpctMU0IKX5y"
+    },
+    {
+      "name": "pronouns",
+      "type": "PropertyValue",
+      "value": "she/her or fungus/mushroom"
+    }
+  ],
+  "capabilities": {
+    "acceptsChatMessages": true
+  },
+  "discoverable": false,
+  "endpoints": {
+    "oauthAuthorizationEndpoint": "https://udongein.xyz/oauth/authorize",
+    "oauthRegistrationEndpoint": "https://udongein.xyz/api/v1/apps",
+    "oauthTokenEndpoint": "https://udongein.xyz/oauth/token",
+    "sharedInbox": "https://udongein.xyz/inbox",
+    "uploadMedia": "https://udongein.xyz/api/ap/upload_media"
+  },
+  "featured": "https://udongein.xyz/users/duponin/collections/featured",
+  "followers": "https://udongein.xyz/users/duponin/followers",
+  "following": "https://udongein.xyz/users/duponin/following",
+  "icon": {
+    "type": "Image",
+    "url": "https://statics.udongein.xyz/udongein/41f43c36b1a0a26db2b4ed1a62082eaf7800e4c82afab62275405fd9a09c3cc8.png?name=mnkcat.png.png"
+  },
+  "id": "https://udongein.xyz/users/duponin",
+  "image": {
+    "type": "Image",
+    "url": "https://statics.udongein.xyz/udongein/38879efe4b775d129f9035c9821c3d11616109b854a10acf65e3eac501df625b.jpg?name=0012.jpg"
+  },
+  "inbox": "https://udongein.xyz/users/duponin/inbox",
+  "manuallyApprovesFollowers": true,
+  "name": "mushroom 🍄",
+  "outbox": "https://udongein.xyz/users/duponin/outbox",
+  "preferredUsername": "duponin",
+  "publicKey": {
+    "id": "https://udongein.xyz/users/duponin#main-key",
+    "owner": "https://udongein.xyz/users/duponin",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyAFQJlqMmyhqRLmm+gXc\n0ozHmja59PWnzTaGyJDfDAI7ku6p2yn1HB67eA2NQBzGzfitlm9U1CR+Nco7mJlu\nt4Ws8tx6j0gFfESyRF/E5acXsoCv9AZRia/GcvmizD2ZP2hx9lqYX5mq/o+jNCkU\n3zSDKZJedArfYiNcjwMWxcqIVW4qAN1GllFQ12EfbSGvFO94ua2v/Q9qKT560aFB\nFkNqH5aTnGOjhVAVPWqBEW6I1QsuqHOptAiCcJm0pujtcpyu+DEeD3lc7rkfIvq5\nEAtX82GidvZplq6UzA8RiDaBzMGMnc6HH3W4LNRd8Vm+4bg1/XFlrlerzIu7frrG\nxwIDAQAB\n-----END PUBLIC KEY-----\n\n"
+  },
+  "summary": "When will November stop?<br/><br/>I was used to having a long bio.<br/><br/>They speak about me:<br/>“You’re the only mushroom I like!” — <span class=\"h-card\"><a class=\"u-url mention\" data-user=\"AVM2VJ4623HAfovtey\" href=\"https://0w0.is/users/yassie_j\" rel=\"ugc\">@<span>yassie_j@0w0.is</span></a></span> <br/><br/>If you wonder why all uploads before 2023-08-06 are broken, here&#39;s the reason:<br/>find uploads -type d -delete<br/><br/># nix-collect-garbage -d<br/>[...]<br/>deleting unused links...<br/>note: currently hard linking saves -0.00 MiB<br/>64231 store paths deleted, 123630.95 MiB freed<br/><br/>N<br/>A<br/>N<br/>O<br/><br/>F<br/>U<br/>N<br/>G<br/>U<br/>S<br/><br/>B<br/>E<br/>I<br/>N<br/>G<br/><br/>Release the Gundams before the spores.<br/><br/>Ich bin eine kartofel :uwu:<br/>(trying my best to learn German)",
+  "tag": [
+    {
+      "icon": {
+        "type": "Image",
+        "url": "https://udongein.xyz/emoji/random/uwu.png"
+      },
+      "id": "https://udongein.xyz/emoji/random/uwu.png",
+      "name": ":uwu:",
+      "type": "Emoji",
+      "updated": "1970-01-01T00:00:00Z"
+    }
+  ],
+  "type": "Person",
+  "url": "https://udongein.xyz/users/duponin",
+  "vcard:bday": null
+}

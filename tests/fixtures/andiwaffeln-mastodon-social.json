@@ -1,0 +1,146 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    {
+      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+      "toot": "http://joinmastodon.org/ns#",
+      "featured": {
+        "@id": "toot:featured",
+        "@type": "@id"
+      },
+      "featuredTags": {
+        "@id": "toot:featuredTags",
+        "@type": "@id"
+      },
+      "alsoKnownAs": {
+        "@id": "as:alsoKnownAs",
+        "@type": "@id"
+      },
+      "movedTo": {
+        "@id": "as:movedTo",
+        "@type": "@id"
+      },
+      "schema": "http://schema.org#",
+      "PropertyValue": "schema:PropertyValue",
+      "value": "schema:value",
+      "discoverable": "toot:discoverable",
+      "suspended": "toot:suspended",
+      "memorial": "toot:memorial",
+      "indexable": "toot:indexable",
+      "attributionDomains": {
+        "@id": "toot:attributionDomains",
+        "@type": "@id"
+      },
+      "Hashtag": "as:Hashtag",
+      "focalPoint": {
+        "@container": "@list",
+        "@id": "toot:focalPoint"
+      }
+    }
+  ],
+  "id": "https://mastodon.social/users/andiwaffeln",
+  "type": "Person",
+  "following": "https://mastodon.social/users/andiwaffeln/following",
+  "followers": "https://mastodon.social/users/andiwaffeln/followers",
+  "inbox": "https://mastodon.social/users/andiwaffeln/inbox",
+  "outbox": "https://mastodon.social/users/andiwaffeln/outbox",
+  "featured": "https://mastodon.social/users/andiwaffeln/collections/featured",
+  "featuredTags": "https://mastodon.social/users/andiwaffeln/collections/tags",
+  "preferredUsername": "andiwaffeln",
+  "name": "Andi Waffeln!",
+  "summary": "<p>Lieber Andi Waffeln als an die Waffen! 🧇<br />Aka Klaus Maria Brandmauer<br />Aka Michael J. Gent</p><p><a href=\"https://mastodon.social/tags/AntiFaschismus\" class=\"mention hashtag\" rel=\"tag\">#<span>AntiFaschismus</span></a> <a href=\"https://mastodon.social/tags/HumanRights\" class=\"mention hashtag\" rel=\"tag\">#<span>HumanRights</span></a> <a href=\"https://mastodon.social/tags/Feminismus\" class=\"mention hashtag\" rel=\"tag\">#<span>Feminismus</span></a> <a href=\"https://mastodon.social/tags/Femizide\" class=\"mention hashtag\" rel=\"tag\">#<span>Femizide</span></a> <a href=\"https://mastodon.social/tags/ToxischeM%C3%A4nnlichkeit\" class=\"mention hashtag\" rel=\"tag\">#<span>ToxischeMännlichkeit</span></a> <a href=\"https://mastodon.social/tags/KlimaKrise\" class=\"mention hashtag\" rel=\"tag\">#<span>KlimaKrise</span></a> <a href=\"https://mastodon.social/tags/SozialeGerechtigkeit\" class=\"mention hashtag\" rel=\"tag\">#<span>SozialeGerechtigkeit</span></a> <a href=\"https://mastodon.social/tags/AggressiverHumanismus\" class=\"mention hashtag\" rel=\"tag\">#<span>AggressiverHumanismus</span></a> <a href=\"https://mastodon.social/tags/KapitalismusKritik\" class=\"mention hashtag\" rel=\"tag\">#<span>KapitalismusKritik</span></a> <a href=\"https://mastodon.social/tags/AfDVerbot\" class=\"mention hashtag\" rel=\"tag\">#<span>AfDVerbot</span></a> <a href=\"https://mastodon.social/tags/TaxTheRich\" class=\"mention hashtag\" rel=\"tag\">#<span>TaxTheRich</span></a> <a href=\"https://mastodon.social/tags/IchWerdeDaf%C3%BCrSorgenDassDuDasKindNieWiederSiehst\" class=\"mention hashtag\" rel=\"tag\">#<span>IchWerdeDafürSorgenDassDuDasKindNieWiederSiehst</span></a> </p><p>Mein erster Roman als Selfpublisher: </p><p>Ich werde dafür sorgen, dass du das Kind nie wieder siehst!: Die wahre Geschichte eines Femizids <br /> <a href=\"https://amzn.eu/d/iaqCrae\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">amzn.eu/d/iaqCrae</span><span class=\"invisible\"></span></a></p>",
+  "url": "https://mastodon.social/@andiwaffeln",
+  "manuallyApprovesFollowers": false,
+  "discoverable": true,
+  "indexable": true,
+  "published": "2025-04-04T00:00:00Z",
+  "memorial": false,
+  "publicKey": {
+    "id": "https://mastodon.social/users/andiwaffeln#main-key",
+    "owner": "https://mastodon.social/users/andiwaffeln",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuAh6xJ9evzX6ZxqgS7/S\nBAMxwEXTPQgM/YZhmi19a7fhAkK5J5WP/JXRV98K9xZzB65cLt5/5pPxqv1TB2JX\nrrVUiw4OnpTlHxGpMGOdGNXWX9uxaH8XiYwaQ/xTllZ4bSM0Q3gP8iT6vcrsZG/V\naEHXDppJ5TX5ZXv0i/0ZJRXfQ6oNNwlOLQQT/1vZZ2pPyOIslFUwmHubtfNnoa5K\n7tcS+YAxN4muQJ2YroDCa79ZiNNQGsJ0+BSyOUzJSktoHIbQ4Ue58MOGc8m8F7id\nnhA5JF8ariMGY/lYjCHDhAv3kM68NEdS6p3lwXDlcvCM+t68hzE40KobybLQmyjv\n+QIDAQAB\n-----END PUBLIC KEY-----\n"
+  },
+  "tag": [
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/humanrights",
+      "name": "#humanrights"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/feminismus",
+      "name": "#feminismus"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/kapitalismuskritik",
+      "name": "#kapitalismuskritik"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/antifaschismus",
+      "name": "#antifaschismus"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/sozialegerechtigkeit",
+      "name": "#sozialegerechtigkeit"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/taxtherich",
+      "name": "#taxtherich"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/klimakrise",
+      "name": "#klimakrise"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/afdverbot",
+      "name": "#afdverbot"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/Femizide",
+      "name": "#Femizide"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/aggressiverhumanismus",
+      "name": "#aggressiverhumanismus"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/toxischemannlichkeit",
+      "name": "#toxischemannlichkeit"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://mastodon.social/tags/ichwerdedafursorgendassdudaskindniewiedersiehst",
+      "name": "#ichwerdedafursorgendassdudaskindniewiedersiehst"
+    }
+  ],
+  "attachment": [
+    {
+      "type": "PropertyValue",
+      "name": "Beigetreten",
+      "value": "04.04.2025"
+    }
+  ],
+  "endpoints": {
+    "sharedInbox": "https://mastodon.social/inbox"
+  },
+  "icon": {
+    "type": "Image",
+    "mediaType": "image/jpeg",
+    "url": "https://files.mastodon.social/accounts/avatars/114/282/089/552/454/573/original/21fd0d6d9f4c953f.jpeg"
+  },
+  "image": {
+    "type": "Image",
+    "mediaType": "image/jpeg",
+    "url": "https://files.mastodon.social/accounts/headers/114/282/089/552/454/573/original/06fb2d00ee879719.jpg"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    {
+      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+      "toot": "http://joinmastodon.org/ns#",
+      "featured": {
+        "@id": "toot:featured",
+        "@type": "@id"
+      },
+      "featuredTags": {
+        "@id": "toot:featuredTags",
+        "@type": "@id"
+      },
+      "alsoKnownAs": {
+        "@id": "as:alsoKnownAs",
+        "@type": "@id"
+      },
+      "movedTo": {
+        "@id": "as:movedTo",
+        "@type": "@id"
+      },
+      "schema": "http://schema.org#",
+      "PropertyValue": "schema:PropertyValue",
+      "value": "schema:value",
+      "discoverable": "toot:discoverable",
+      "suspended": "toot:suspended",
+      "memorial": "toot:memorial",
+      "indexable": "toot:indexable",
+      "attributionDomains": {
+        "@id": "toot:attributionDomains",
+        "@type": "@id"
+      },
+      "Hashtag": "as:Hashtag",
+      "focalPoint": {
+        "@container": "@list",
+        "@id": "toot:focalPoint"
+      }
+    }
+  ],
+  "id": "https://chaos.social/users/Seitansbraten",
+  "type": "Person",
+  "following": "https://chaos.social/users/Seitansbraten/following",
+  "followers": "https://chaos.social/users/Seitansbraten/followers",
+  "inbox": "https://chaos.social/users/Seitansbraten/inbox",
+  "outbox": "https://chaos.social/users/Seitansbraten/outbox",
+  "featured": "https://chaos.social/users/Seitansbraten/collections/featured",
+  "featuredTags": "https://chaos.social/users/Seitansbraten/collections/tags",
+  "preferredUsername": "Seitansbraten",
+  "name": "Seitansbraten",
+  "summary": "<p>Ambivalentes Grenzwesen, <a href=\"https://chaos.social/tags/fcknzs\" class=\"mention hashtag\" rel=\"tag\">#<span>fcknzs</span></a> <a href=\"https://chaos.social/tags/VeganForTheAnimals\" class=\"mention hashtag\" rel=\"tag\">#<span>VeganForTheAnimals</span></a> Feminist against TERF <a href=\"https://chaos.social/tags/BLM\" class=\"mention hashtag\" rel=\"tag\">#<span>BLM</span></a> optimistische Pessimistin <a href=\"https://chaos.social/tags/Inklusion\" class=\"mention hashtag\" rel=\"tag\">#<span>Inklusion</span></a> streitbar <a href=\"https://chaos.social/tags/whovian\" class=\"mention hashtag\" rel=\"tag\">#<span>whovian</span></a> for life, Cooking is my love language &amp; coping mechanism - angry cripple &amp; Spoonie<br />Read Lyrics from Affirmation by Savage Garden - If you want to make the world a better place, take a look at yourself, and make a change.<br />(Michael Jackson)</p>",
+  "url": "https://chaos.social/@Seitansbraten",
+  "manuallyApprovesFollowers": false,
+  "discoverable": true,
+  "indexable": true,
+  "published": "2022-10-29T00:00:00Z",
+  "memorial": false,
+  "publicKey": {
+    "id": "https://chaos.social/users/Seitansbraten#main-key",
+    "owner": "https://chaos.social/users/Seitansbraten",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoyr1M6YgDX4B/GDTbmK4\n3lJkhXTrSYxlXcS9kf+AHt6yvOY+wDd/SKgI5Uh3YMg1O3M2Iu3G79mp7se+xb5x\noYkZzXJD6UCmrFEJ1DSd/NciY/Tb7xCuvKvuPUJXBVrk5HMWyf5jfzjINx3YX0+b\n02gLDyDKOhOHNAhseoXfx546QRNx3fnSnQcaCHuAIVKk3m3MTnElJhU950h4tE+k\n0mI2/CHp4qBgMTUgSyn8p4kGYsEcNwbUissoUAaNiHukS4H3MTD3YVd4nax+X6E9\nC6iT11k2gSkKAKW4oDPyFfoM0g+jrBt+zaSZFcalxYvRRkzSqpT1VRqUKbsp6G6L\nGwIDAQAB\n-----END PUBLIC KEY-----\n"
+  },
+  "tag": [
+    {
+      "type": "Hashtag",
+      "href": "https://chaos.social/tags/fcknzs",
+      "name": "#fcknzs"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://chaos.social/tags/inklusion",
+      "name": "#inklusion"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://chaos.social/tags/blm",
+      "name": "#blm"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://chaos.social/tags/whovian",
+      "name": "#whovian"
+    },
+    {
+      "type": "Hashtag",
+      "href": "https://chaos.social/tags/veganfortheanimals",
+      "name": "#veganfortheanimals"
+    }
+  ],
+  "attachment": [
+    {
+      "type": "PropertyValue",
+      "name": "Pronomen",
+      "value": "She/her"
+    },
+    {
+      "type": "PropertyValue",
+      "name": "Privileges",
+      "value": "white/cis"
+    },
+    {
+      "type": "PropertyValue",
+      "name": "Themen",
+      "value": "Kochen, vegan, Inklusion, Antifa, Feminismus, Klima, Tierschutz, Whovian\n\nHeader: Rigatoni mit Rosenkohl &amp; Pekannüssen \n\nProfilbild:  Madame Mim mit dem Schrifzug I&#39;m an ugly old creep"
+    }
+  ],
+  "endpoints": {
+    "sharedInbox": "https://chaos.social/inbox"
+  },
+  "icon": {
+    "type": "Image",
+    "mediaType": "image/png",
+    "url": "https://assets.chaos.social/accounts/avatars/109/252/274/489/782/662/original/5cb33e8de88878b4.png"
+  },
+  "image": {
+    "type": "Image",
+    "mediaType": "image/jpeg",
+    "url": "https://assets.chaos.social/accounts/headers/109/252/274/489/782/662/original/390fc2b22c832c43.jpg"
+  }
+}
