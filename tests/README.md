@@ -7,19 +7,18 @@ This directory contains compatibility tests for the ActivityPub Actor schema aga
 The `fixtures/` directory contains actual actor JSON data fetched from live instances:
 
 ### Mastodon
-- **@mpe@hcommons.social** - Academic-focused Mastodon instance
-- **@andiwaffeln@mastodon.social** - Main Mastodon instance with profile hashtags
-- **@markhurst@mastodon.social** - Main Mastodon instance with PropertyValue metadata
-- **@Seitansbraten@chaos.social** - Chaos Computer Club Mastodon instance
+- **hcommons.social** - Academic-focused Mastodon instance
+- **mastodon.social** - Main Mastodon instance with profile hashtags and PropertyValue metadata
+- **chaos.social** - Chaos Computer Club Mastodon instance
 
 ### Friendica
-- **@notizie@poliverso.org** - Friendica instance with extended ActivityPub support
+- **poliverso.org** - Friendica instance with extended ActivityPub support
 
 ### Pleroma/Akkoma
-- **@duponin@udongein.xyz** - Pleroma/Akkoma instance with custom emojis
+- **udongein.xyz** - Pleroma/Akkoma instance with custom emojis
 
 ### Misskey
-- **@mewl@mewl.me** - Misskey instance with extended Misskey-specific metadata
+- **mewl.me** - Misskey instance with extended Misskey-specific metadata
 
 ## Running Tests
 
@@ -54,7 +53,7 @@ To update fixtures with fresh data from live instances:
 
 ```bash
 # Fetch actor data
-curl -H "Accept: application/activity+json" https://instance.social/users/username > tests/fixtures/username-instance-social.json
+curl -H "Accept: application/activity+json" https://instance.social/users/username > tests/fixtures/platform-instance-social.json
 
 # Run tests to verify
 npm test

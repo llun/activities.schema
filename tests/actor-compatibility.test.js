@@ -11,50 +11,43 @@ const fixturesDir = join(__dirname, 'fixtures');
 // Test data mapping
 const testActors = [
   {
-    name: '@mpe@hcommons.social',
-    file: 'mpe-hcommons-social.json',
+    file: 'mastodon-hcommons-social.json',
     platform: 'Mastodon',
     instance: 'hcommons.social',
     description: 'Mastodon instance with academic focus'
   },
   {
-    name: '@notizie@poliverso.org',
-    file: 'notizie-poliverso-org.json',
+    file: 'friendica-poliverso-org.json',
     platform: 'Friendica',
     instance: 'poliverso.org',
     description: 'Friendica instance with extended ActivityPub support'
   },
   {
-    name: '@andiwaffeln@mastodon.social',
-    file: 'andiwaffeln-mastodon-social.json',
+    file: 'mastodon-social-1.json',
     platform: 'Mastodon',
     instance: 'mastodon.social',
     description: 'Main Mastodon instance with hashtags in profile'
   },
   {
-    name: '@markhurst@mastodon.social',
-    file: 'markhurst-mastodon-social.json',
+    file: 'mastodon-social-2.json',
     platform: 'Mastodon',
     instance: 'mastodon.social',
-    description: 'Mastodon instance with PropertyValue attachments'
+    description: 'Main Mastodon instance with PropertyValue attachments'
   },
   {
-    name: '@Seitansbraten@chaos.social',
-    file: 'seitansbraten-chaos-social.json',
+    file: 'mastodon-chaos-social.json',
     platform: 'Mastodon',
     instance: 'chaos.social',
     description: 'Chaos Computer Club Mastodon instance'
   },
   {
-    name: '@duponin@udongein.xyz',
-    file: 'duponin-udongein-xyz.json',
+    file: 'pleroma-udongein-xyz.json',
     platform: 'Pleroma/Akkoma',
     instance: 'udongein.xyz',
     description: 'Pleroma/Akkoma instance with custom emojis'
   },
   {
-    name: '@mewl@mewl.me',
-    file: 'mewl-mewl-me.json',
+    file: 'misskey-mewl-me.json',
     platform: 'Misskey',
     instance: 'mewl.me',
     description: 'Misskey instance with extended metadata'
@@ -75,8 +68,7 @@ for (const actor of testActors) {
   totalTests++;
   const filePath = join(fixturesDir, actor.file);
   
-  console.log(`Testing: ${actor.name}`);
-  console.log(`Platform: ${actor.platform} (${actor.instance})`);
+  console.log(`Testing: ${actor.platform} (${actor.instance})`);
   console.log(`Description: ${actor.description}`);
   
   try {
@@ -100,8 +92,8 @@ for (const actor of testActors) {
       console.log(JSON.stringify(result.error.format(), null, 2));
       failedTests++;
       failures.push({
-        actor: actor.name,
         platform: actor.platform,
+        instance: actor.instance,
         errors: result.error.format()
       });
     }
@@ -110,8 +102,8 @@ for (const actor of testActors) {
     console.log(`  ${error.message}`);
     failedTests++;
     failures.push({
-      actor: actor.name,
       platform: actor.platform,
+      instance: actor.instance,
       errors: error.message
     });
   }
@@ -131,7 +123,7 @@ if (failedTests > 0) {
   console.log('Failed Tests:');
   console.log('-'.repeat(70));
   failures.forEach(failure => {
-    console.log(`${failure.actor} (${failure.platform})`);
+    console.log(`${failure.platform} (${failure.instance})`);
     console.log(JSON.stringify(failure.errors, null, 2));
     console.log('');
   });
