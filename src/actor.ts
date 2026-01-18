@@ -1,19 +1,37 @@
 import { z } from "zod";
 import { Image } from "./image.js";
+import { PropertyValue } from "./note/propertyValue.js";
+import { HashTag } from "./note/hashtag.js";
+import { Emoji } from "./note/emoji.js";
 
 export const Actor = z.object({
   id: z.string(),
-  type: z.union([z.literal("Person"), z.literal("Service")]),
+  type: z.union([
+    z.literal("Person"),
+    z.literal("Service"),
+    z.literal("Application"),
+    z.literal("Group"),
+    z.literal("Organization"),
+  ]),
   following: z.string().url().optional(),
-  followers: z.string().url(),
+  followers: z.string().url().optional(),
   inbox: z.string().url(),
   outbox: z.string().url(),
+  featured: z.string().url().optional(),
+  featuredTags: z.string().url().optional(),
   preferredUsername: z.string(),
-  name: z.string(),
+  name: z.string().optional(),
   summary: z.string().nullish(),
-  url: z.string().url(),
+  url: z.string().optional(),
   published: z.string().nullish(),
   manuallyApprovesFollowers: z.boolean().optional(),
+  discoverable: z.boolean().optional(),
+  indexable: z.boolean().optional(),
+  memorial: z.boolean().optional(),
+  suspended: z.boolean().optional(),
+  devices: z.string().url().optional(),
+  alsoKnownAs: z.array(z.string()).optional(),
+  movedTo: z.string().optional(),
   publicKey: z.object({
     id: z.string(),
     owner: z.string(),
@@ -26,6 +44,16 @@ export const Actor = z.object({
     .optional(),
   icon: Image.nullish(),
   image: Image.nullish(),
+  attachment: z.array(PropertyValue).optional(),
+  tag: z.array(z.union([HashTag, Emoji])).optional(),
+  generator: z
+    .object({
+      id: z.string().optional(),
+      type: z.string(),
+      name: z.string().optional(),
+      url: z.string().optional(),
+    })
+    .optional(),
 });
 export type Actor = z.infer<typeof Actor>;
 
