@@ -1,6 +1,6 @@
 {
   "name": "@llun/activities.schema",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Validate ActivityPub and Mastodon with Zod",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -8,6 +8,7 @@
   "type": "module",
   "scripts": {
     "build": "mkdir -p dist && tsc --module commonjs --moduleResolution Node --outDir dist/cjs && tsc --module NodeNext --moduleResolution NodeNext --outDir dist/esm && tsc --emitDeclarationOnly --declaration --moduleResolution node16 --module node16 --outDir dist/types",
+    "test": "npm run build && node tests/actor-compatibility.test.js",
     "release": "rm -rf dist && npm run build && npm publish --access public"
   },
   "author": "Maythee Anegboonlap <null@llun.dev>",

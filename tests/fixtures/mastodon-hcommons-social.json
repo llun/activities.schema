@@ -1,0 +1,105 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    {
+      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+      "toot": "http://joinmastodon.org/ns#",
+      "featured": {
+        "@id": "toot:featured",
+        "@type": "@id"
+      },
+      "featuredTags": {
+        "@id": "toot:featuredTags",
+        "@type": "@id"
+      },
+      "alsoKnownAs": {
+        "@id": "as:alsoKnownAs",
+        "@type": "@id"
+      },
+      "movedTo": {
+        "@id": "as:movedTo",
+        "@type": "@id"
+      },
+      "schema": "http://schema.org#",
+      "PropertyValue": "schema:PropertyValue",
+      "value": "schema:value",
+      "discoverable": "toot:discoverable",
+      "Device": "toot:Device",
+      "Ed25519Signature": "toot:Ed25519Signature",
+      "Ed25519Key": "toot:Ed25519Key",
+      "Curve25519Key": "toot:Curve25519Key",
+      "EncryptedMessage": "toot:EncryptedMessage",
+      "publicKeyBase64": "toot:publicKeyBase64",
+      "deviceId": "toot:deviceId",
+      "claim": {
+        "@type": "@id",
+        "@id": "toot:claim"
+      },
+      "fingerprintKey": {
+        "@type": "@id",
+        "@id": "toot:fingerprintKey"
+      },
+      "identityKey": {
+        "@type": "@id",
+        "@id": "toot:identityKey"
+      },
+      "devices": {
+        "@type": "@id",
+        "@id": "toot:devices"
+      },
+      "messageFranking": "toot:messageFranking",
+      "messageType": "toot:messageType",
+      "cipherText": "toot:cipherText",
+      "suspended": "toot:suspended",
+      "memorial": "toot:memorial",
+      "indexable": "toot:indexable",
+      "focalPoint": {
+        "@container": "@list",
+        "@id": "toot:focalPoint"
+      }
+    }
+  ],
+  "id": "https://hcommons.social/users/mpe",
+  "type": "Person",
+  "following": "https://hcommons.social/users/mpe/following",
+  "followers": "https://hcommons.social/users/mpe/followers",
+  "inbox": "https://hcommons.social/users/mpe/inbox",
+  "outbox": "https://hcommons.social/users/mpe/outbox",
+  "featured": "https://hcommons.social/users/mpe/collections/featured",
+  "featuredTags": "https://hcommons.social/users/mpe/collections/tags",
+  "preferredUsername": "mpe",
+  "name": "Martin Paul Eve",
+  "summary": "<p>Tech Lead @ Knowledge Commons, MESH, Michigan State University | Lit Prof @ Uni of London, Birkbeck | Music on tici taci records | My books: <a href=\"https://books.eve.gd\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">books.eve.gd</span><span class=\"invisible\"></span></a></p>",
+  "url": "https://hcommons.social/@mpe",
+  "manuallyApprovesFollowers": false,
+  "discoverable": false,
+  "indexable": false,
+  "published": "2025-01-06T00:00:00Z",
+  "memorial": false,
+  "devices": "https://hcommons.social/users/mpe/collections/devices",
+  "alsoKnownAs": [
+    "https://ravenation.club/users/mpe"
+  ],
+  "publicKey": {
+    "id": "https://hcommons.social/users/mpe#main-key",
+    "owner": "https://hcommons.social/users/mpe",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt/hjC6MJnOmq99zoNo7w\nRo4W2TUExvBRLSaamyoZaabrbJZPXslqO0pHOW5mQtKwEn0pljCPyrSkEsF3Ulcj\nTDqlqbMQSpl1c3QuP4TCTVSvr0rHuSGoXTevL2kSEiIQoyvEc4paXof4/c4QZPDX\nlcHPmBzaerUJbbctR3GxO6OOK1IUVumHQ7Bnfwr1krvcTylxFkD/rut4+nArD/KU\nLsAEh/5Rk8CSqoZob+w04S4bx5yrMqf2H6jVIAV7Yj4V7AK/1qh2Up1e/zWKS4qs\n4phVS9fSQ//eZ0M57RQfl7ttO4rhRebTh1I5eFAIVZta/D+LLuEsYK/UFrWG3zRk\nTQIDAQAB\n-----END PUBLIC KEY-----\n"
+  },
+  "tag": [],
+  "attachment": [
+    {
+      "type": "PropertyValue",
+      "name": "Homepage",
+      "value": "<a href=\"https://eve.gd\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">eve.gd</span><span class=\"invisible\"></span></a>"
+    }
+  ],
+  "endpoints": {
+    "sharedInbox": "https://hcommons.social/inbox"
+  },
+  "icon": {
+    "type": "Image",
+    "mediaType": "image/jpeg",
+    "url": "https://spaces.hcommons.social/accounts/avatars/113/782/405/532/448/589/original/62938f998f47e6e1.jpg"
+  }
+}

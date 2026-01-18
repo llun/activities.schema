@@ -1,0 +1,146 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    {
+      "Key": "sec:Key",
+      "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+      "sensitive": "as:sensitive",
+      "Hashtag": "as:Hashtag",
+      "quoteUrl": "as:quoteUrl",
+      "toot": "http://joinmastodon.org/ns#",
+      "Emoji": "toot:Emoji",
+      "featured": "toot:featured",
+      "discoverable": "toot:discoverable",
+      "schema": "http://schema.org#",
+      "PropertyValue": "schema:PropertyValue",
+      "value": "schema:value",
+      "misskey": "https://misskey-hub.net/ns#",
+      "_misskey_content": "misskey:_misskey_content",
+      "_misskey_quote": "misskey:_misskey_quote",
+      "_misskey_reaction": "misskey:_misskey_reaction",
+      "_misskey_votes": "misskey:_misskey_votes",
+      "_misskey_summary": "misskey:_misskey_summary",
+      "_misskey_followedMessage": "misskey:_misskey_followedMessage",
+      "_misskey_requireSigninToViewContents": "misskey:_misskey_requireSigninToViewContents",
+      "_misskey_makeNotesFollowersOnlyBefore": "misskey:_misskey_makeNotesFollowersOnlyBefore",
+      "_misskey_makeNotesHiddenBefore": "misskey:_misskey_makeNotesHiddenBefore",
+      "_misskey_license": "misskey:_misskey_license",
+      "freeText": {
+        "@id": "misskey:freeText",
+        "@type": "schema:text"
+      },
+      "isCat": "misskey:isCat",
+      "vcard": "http://www.w3.org/2006/vcard/ns#"
+    }
+  ],
+  "type": "Person",
+  "id": "https://mewl.me/users/5b6bb2cada8b912b16218d34",
+  "inbox": "https://mewl.me/users/5b6bb2cada8b912b16218d34/inbox",
+  "outbox": "https://mewl.me/users/5b6bb2cada8b912b16218d34/outbox",
+  "followers": "https://mewl.me/users/5b6bb2cada8b912b16218d34/followers",
+  "following": "https://mewl.me/users/5b6bb2cada8b912b16218d34/following",
+  "featured": "https://mewl.me/users/5b6bb2cada8b912b16218d34/collections/featured",
+  "sharedInbox": "https://mewl.me/inbox",
+  "endpoints": {
+    "sharedInbox": "https://mewl.me/inbox"
+  },
+  "url": "https://mewl.me/@mewl",
+  "preferredUsername": "mewl",
+  "name": ":icon_short_short_mewlme:",
+  "summary": "<p><span>・mewl.me → みゅーる.みー / めうる.め → めうるみ<br />・なまえ: hayabusa<br />・ </span><a href=\"https://nekomimi.studio\">https://nekomimi.studio</a><span><br />・</span><a href=\"https://mewl.me/@hayabusa@otoya.space\" class=\"u-url mention\">@hayabusa@otoya.space</a><span><br />・</span><a href=\"https://mewl.me/@mewl@virtualkemomimi.net\" class=\"u-url mention\">@mewl@virtualkemomimi.net</a></p>",
+  "_misskey_summary": "・mewl.me → みゅーる.みー / めうる.め → めうるみ\n・なまえ: hayabusa\n・ https://nekomimi.studio\n・@hayabusa@otoya.space\n・@mewl@virtualkemomimi.net",
+  "_misskey_followedMessage": "ばなな",
+  "_misskey_requireSigninToViewContents": false,
+  "_misskey_makeNotesFollowersOnlyBefore": null,
+  "_misskey_makeNotesHiddenBefore": null,
+  "icon": {
+    "type": "Image",
+    "url": "https://objects.misskey.mewl.me/files/webpublic-a0dccb8d-4aa5-4796-ab6e-0ab3754dab65.png",
+    "sensitive": false,
+    "name": null
+  },
+  "image": {
+    "type": "Image",
+    "url": "https://objects-misskey.mewl.me/files/webpublic-c1bd6c84-5e13-4ed8-9239-8ead2680f08f.webp",
+    "sensitive": false,
+    "name": null
+  },
+  "tag": [
+    {
+      "id": "https://mewl.me/emojis/icon_short_short_mewlme",
+      "type": "Emoji",
+      "name": ":icon_short_short_mewlme:",
+      "updated": "2023-03-06T02:07:20.779Z",
+      "icon": {
+        "type": "Image",
+        "mediaType": "image/png",
+        "url": "https://objects-misskey.mewl.me/files/07f1eb1f-18a8-4165-8997-a009c86af4db.png"
+      },
+      "_misskey_license": {
+        "freeText": null
+      }
+    },
+    {
+      "id": "https://mewl.me/emojis/DMG_LSDj",
+      "type": "Emoji",
+      "name": ":DMG_LSDj:",
+      "updated": "2022-01-27T03:22:49.526Z",
+      "icon": {
+        "type": "Image",
+        "mediaType": "image/png",
+        "url": "https://objects.misskey.mewl.me/files/webpublic-793e11e2-e688-4da2-a837-78a7991ef57a.png"
+      },
+      "_misskey_license": {
+        "freeText": null
+      }
+    },
+    {
+      "id": "https://mewl.me/emojis/Cart_DMG_LSDj",
+      "type": "Emoji",
+      "name": ":Cart_DMG_LSDj:",
+      "updated": "2022-01-27T03:23:34.014Z",
+      "icon": {
+        "type": "Image",
+        "mediaType": "image/png",
+        "url": "https://objects.misskey.mewl.me/files/webpublic-00924c27-9e58-4e70-9ded-cd1030a75cfe.png"
+      },
+      "_misskey_license": {
+        "freeText": null
+      }
+    }
+  ],
+  "manuallyApprovesFollowers": false,
+  "discoverable": true,
+  "publicKey": {
+    "id": "https://mewl.me/users/5b6bb2cada8b912b16218d34#main-key",
+    "type": "Key",
+    "owner": "https://mewl.me/users/5b6bb2cada8b912b16218d34",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA64wEXXXTJCNzT7dPw9h+\nazgqRsPFoK2z7O9VrIWH69MLb5GuK1qUyuMEB0JmMe0fHheHrZF/PAeru7e0rlkY\n7+OxAQhYuiXgNM4gVJdrhR/sjwdS21LPzT1PLjmkP3lnrGBWtuuzlA1z18uIoVGV\nJ1N6zmQHuvgYY+R9sktt77UojF8QQ5ayrfqIWgaVa/V6FHTSatM3+pfIsjsg9AoC\nxe0UFZyNjDvIh6fVafYxC9z0hQwUcH3dTY6W9dI3mcYGM3KA97emvo1aFLif8knL\nqGK2lhaf2JhjKTgY92iwugOkZvvWsfn8uMxfit38wrikSZnuHEcbFAC8L7xDdFVa\n0wIDAQAB\n-----END PUBLIC KEY-----\n"
+  },
+  "isCat": false,
+  "attachment": [
+    {
+      "type": "PropertyValue",
+      "name": "Twitter",
+      "value": "<a href=\"https://twitter.com/mewl_me\" rel=\"me nofollow noopener\" target=\"_blank\">https://twitter.com/mewl_me</a>"
+    },
+    {
+      "type": "PropertyValue",
+      "name": "VRChatアカウント",
+      "value": "<a href=\"https://vrchat.mewl.me/\" rel=\"me nofollow noopener\" target=\"_blank\">https://vrchat.mewl.me</a>"
+    },
+    {
+      "type": "PropertyValue",
+      "name": "おすすめなもの",
+      "value": "<a href=\"https://www.amazon.jp/hz/wishlist/ls/18P5VXC43F13O\" rel=\"me nofollow noopener\" target=\"_blank\">https://www.amazon.jp/hz/wishlist/ls/18P5VXC43F13O</a>"
+    },
+    {
+      "type": "PropertyValue",
+      "name": ":DMG_LSDj: 音 :Cart_DMG_LSDj:",
+      "value": "<a href=\"https://nekomimi.studio/music.html?playlist=json/kaijouyaki.json\" rel=\"me nofollow noopener\" target=\"_blank\">https://nekomimi.studio/music.html?playlist=json/kaijouyaki.json</a>"
+    }
+  ],
+  "vcard:bday": "2000-01-26",
+  "vcard:Address": "カニクリームコロッケ"
+}
